@@ -15,3 +15,7 @@ maps$Latitude<-gsub("N","",as.character(maps$Latitude))
 #1.4
 idx <- which(grepl("W", maps$Longitude)==TRUE)
 maps$Longitude<-gsub("E","",as.character(maps$Longitude))
+
+
+#1.5
+maps$Longitude<-gsub("W","",as.character(maps$Longitude))

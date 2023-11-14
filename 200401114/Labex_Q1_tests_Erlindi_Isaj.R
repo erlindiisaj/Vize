@@ -26,4 +26,9 @@ test_that("maps adlı data.frame’in ilk sütunun adı “City” olmalıdır."
   expect_identical(colnames(maps)[1] == "City", T)
 })
 
+test_that("maps adlı data.frame’in 5. sütunun adında “Title” kelimesi ", {
+  expect_identical(colnames(maps)[5] == "Title.of.Map.Being.Discussed", T)
+})
+
+
 
