@@ -48,3 +48,15 @@ test_that("idx nesnesinin tipi (class’ı) integer’dir.", {
 })
 
 
+test_that("Year adlı adlı sütün numeric değerlerden oluşmalıdır.", {
+  expect_identical(all(maps$Longitude[idx] < 0, na.rm = TRUE), TRUE)
+})
+
+
+
+test_that("finalResult adlı değiken vardır.", {
+  expect_identical(exists("finalResult"), ncol(finalResult) == 3, class(finalResult) == "data.frame", all(c("Longitude", "Latitude", "Year") == names(finalResult), rm.na=TRUE), T)
+})
+
+
+

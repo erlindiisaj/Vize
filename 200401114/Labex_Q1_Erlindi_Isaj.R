@@ -33,6 +33,9 @@ maps$Latitude <- as.numeric(maps$Latitude)
 #1.8
 hist(as.numeric(maps$Year))
 
-#1.8
+#1.9
 maps$Year <- as.numeric(maps$Year)
 maps$Longitude[idx] <- maps$Longitude[idx] * -1
+
+#1.10
+finalResult <- data.frame(Longitude = maps$Longitude, Latitude = maps$Latitude, Year= maps$Year)
