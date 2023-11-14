@@ -22,4 +22,8 @@ test_that("maps nesnesi bir data.frame’dir.", {
   expect_identical(class(maps) == "data.frame", T)
 })
 
+test_that("maps adlı data.frame’in ilk sütunun adı “City” olmalıdır.", {
+  expect_identical(colnames(maps)[1] == "City", T)
+})
+
 

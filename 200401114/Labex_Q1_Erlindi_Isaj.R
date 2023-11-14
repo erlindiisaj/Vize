@@ -9,3 +9,9 @@ maps <- read.csv(url("https://raw.githubusercontent.com/scizmeli/Red/master/Maps
 
 #1.3
 maps$Latitude<-gsub("N","",as.character(maps$Latitude))
+
+
+
+#1.4
+idx <- which(grepl("W", maps$Longitude)==TRUE)
+maps$Longitude<-gsub("E","",as.character(maps$Longitude))
