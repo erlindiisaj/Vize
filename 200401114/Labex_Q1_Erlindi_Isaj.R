@@ -19,3 +19,8 @@ maps$Longitude<-gsub("E","",as.character(maps$Longitude))
 
 #1.5
 maps$Longitude<-gsub("W","",as.character(maps$Longitude))
+
+
+#1.6
+maps$Year<-gsub("AD", "", as.character(maps$Year))
+maps$Year<- as.numeric(maps$Year)
