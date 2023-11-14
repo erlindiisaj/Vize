@@ -5,3 +5,7 @@ download.file("https://raw.githubusercontent.com/scizmeli/Red/master/MapsThatCha
 
 #1.2
 maps <- read.csv(url("https://raw.githubusercontent.com/scizmeli/Red/master/MapsThatChangedOurWorld_StoryMap_Data.csv"), header=TRUE , sep=";")
+
+
+#1.3
+maps$Latitude<-gsub("N","",as.character(maps$Latitude))
