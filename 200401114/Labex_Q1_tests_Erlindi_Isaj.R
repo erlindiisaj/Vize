@@ -30,5 +30,12 @@ test_that("maps adlı data.frame’in 5. sütunun adında “Title” kelimesi "
   expect_identical(colnames(maps)[5] == "Title.of.Map.Being.Discussed", T)
 })
 
+test_that("Latitude adlı sütün numeric değerlerden oluşmalıdır.", {
+  expect_identical(is.numeric(maps$Latitude), T)
+})
+
+test_that("Longitude adlı sütün numeric değerlerden oluşmalıdır.", {
+  expect_identical(is.numeric(maps$Longitude), T)
+})
 
 
