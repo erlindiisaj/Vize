@@ -38,4 +38,13 @@ test_that("Longitude adlı sütün numeric değerlerden oluşmalıdır.", {
   expect_identical(is.numeric(maps$Longitude), T)
 })
 
+test_that("idx nesnesi Global Workspace’de mevcuttur.", {
+  expect_identical(exists("idx"), T)
+})
+
+
+test_that("idx nesnesinin tipi (class’ı) integer’dir.", {
+  expect_identical(class(idx) == "integer", T)
+})
+
 
